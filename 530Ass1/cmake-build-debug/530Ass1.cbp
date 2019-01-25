@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="530Ass1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="530Ass1">
+				<Option output="/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/530Ass1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/."/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Qunit"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/headers"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/source"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Catalog/headers"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Catalog/source"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Qunit/headers"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 530Ass1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="530Ass1/fast">
+				<Option output="/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/530Ass1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/."/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Qunit"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/headers"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/source"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Catalog/headers"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Catalog/source"/>
+					<Add directory="/Users/kenadu/CLionProjects/530Ass1/Main/Qunit/headers"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 530Ass1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kenadu/CLionProjects/530Ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/headers/MyDB_BufferManager.h">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/headers/MyDB_Page.h">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/headers/MyDB_PageHandle.h">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/headers/buffer_node.h">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/source/MyDB_BufferManager.cc">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/source/MyDB_Page.cc">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/source/MyDB_PageHandle.cc">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferMgr/source/buffer_node.cpp">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/BufferTest/source/BufferQUnit.cc">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/Catalog/headers/MyDB_Table.h">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/Main/Catalog/source/MyDB_Table.cc">
+			<Option target="530Ass1"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/530Ass1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
