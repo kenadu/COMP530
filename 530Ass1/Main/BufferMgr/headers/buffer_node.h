@@ -21,6 +21,7 @@ public:
     void set_bit(bool);
     bool get_bit();
     void set_page(Page*);
+    char* get_addr();
 };
 
 

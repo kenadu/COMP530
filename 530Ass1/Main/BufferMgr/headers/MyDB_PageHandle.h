@@ -4,9 +4,11 @@
 
 #include <memory>
 #include "MyDB_Page.h"
+#include "MyDB_BufferManager.h"
 // page handles are basically smart pointers
 using namespace std;
 class MyDB_PageHandleBase;
+class MyDB_BufferManager;
 typedef shared_ptr <MyDB_PageHandleBase> MyDB_PageHandle;
 
 class MyDB_PageHandleBase {
@@ -16,8 +18,8 @@ public:
 	// THESE METHODS MUST BE IMPLEMENTED WITHOUT CHANGING THE DEFINITION
 
 	// access the raw bytes in this page... if the page is not currently
-	// in the buffer, then the contents of the page are loaded from 
-	// secondary storage. 
+	// in the buffer, then the contents of the page are loaded from
+	// secondary storage.
 	void *getBytes ();
 
 	// let the page know that we have written to the bytes.  Must always
@@ -39,6 +41,7 @@ public:
 
 private:
 	Page* my_page;
+	MyDB_BufferManager* bm;
 	// YOUR CODE HERE
 
 };

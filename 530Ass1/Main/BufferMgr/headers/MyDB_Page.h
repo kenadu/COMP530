@@ -3,6 +3,8 @@
 
 #include <memory>
 #include <iostream>
+#include <unistd.h>
+#include "buffer_node.h"
 using namespace std;
 class Page;
 /*
@@ -13,7 +15,7 @@ class Page;
 class Page{
 private:
 	char* data;
-	char* buffer_addr;
+	Node* buffer_addr;
 	int ref_counter;
 	//buf_addr
 	bool is_Anonymous;
@@ -21,10 +23,12 @@ private:
 	bool is_Dirty;
 public: 
 	Page();
-	Page(char*, bool, bool, bool);
+	Page(Node*, bool, bool, bool);
 	bool getAnonymous();
-	char* getBuffer_addr();
-	void setBuffer_addr(char*);
+	Node* getBuffer_addr();
+	char* read_from_disk(int, long, int);
+	void write_back_to_disk(int, long, int);
+	void setBuffer_addr(Node*);
 	void incre_cntr();
 	void decre_cntr();
 	bool check_cntr();

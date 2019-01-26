@@ -4,10 +4,13 @@
 
 #include "MyDB_PageHandle.h"
 #include "MyDB_Table.h"
+#include <memory>
+#include <iostream>
 #include "buffer_node.h"
 #include <map>
 #include <set>
 #include <vector>
+
 
 using namespace std;
 
@@ -53,13 +56,20 @@ public:
 	// and any temporary files need to be deleted
 	~MyDB_BufferManager ();
 
-	// FEEL FREE TO ADD ADDITIONAL PUBLIC METHODS 
+	// FEEL FREE TO ADD ADDITIONAL PUBLIC METHODS
+	int getClock_ptr();
+	void increClock_ptr();
+	Node* next_empty_node();
+	bool get_node_bit();
+	void evictPage_and_add(Page*);
+
 
 private:
 	size_t pageSize;
 	size_t numPages;
 	string tempFile;
 	vector<Node*>clock;
+	int clock_ptr;
 	// YOUR STUFF HERE
 
 };

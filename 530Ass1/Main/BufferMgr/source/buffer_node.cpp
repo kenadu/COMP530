@@ -16,10 +16,13 @@ Page* Node::get_page() {
 void Node::set_page(Page* the_page) {
     this->buffered_page = the_page;
 }
-void Node::set_bit(bool bit)
-{
+void Node::set_bit(bool bit){
     this->bit = bit;
 }
+char* Node::get_addr() {
+    return addr;
+}
+
 bool Node::get_bit(){
     return bit;
 }

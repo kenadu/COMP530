@@ -1,13 +1,15 @@
 #include <MyDB_Page.h>
 #include <memory>
+#include <iostream>
 using namespace std;
 Page::Page(){
 	this->buffer_addr = NULL;
 }
-Page::Page(char* buffer_addr, bool is_Pinned, bool is_Anonymous, bool is_Dirty){
+Page::Page(Node* buffer_addr, bool is_Pinned, bool is_Anonymous, bool is_Dirty){
 	this->buffer_addr = buffer_addr;
 	this->is_Pinned = is_Pinned;
-	this->
+	this->is_Anonymous = is_Anonymous;
+	this->is_Dirty = is_Dirty;
 }
 bool Page:: getAnonymous(){
 	return is_Anonymous;
@@ -18,10 +20,10 @@ bool Page:: getPinned(){
 bool Page:: getDirty(){
 	return is_Dirty;
 }
-char* Page::getBuffer_addr(){
+Node* Page::getBuffer_addr(){
 	return this->buffer_addr;
 }
-void Page::setBuffer_addr(char* buffer_addr){
+void Page::setBuffer_addr(Node* buffer_addr){
 	this->buffer_addr = buffer_addr;
 }
 void Page:: setAnonymous(bool a){
@@ -34,16 +36,29 @@ void Page:: setDirty(bool d){
 	this->is_Dirty = d;
 }
 bool Page::check_cntr(){
-	if(this->ref_counter==0) return false;
+	if(this->ref_counter<=0) return false;
 	return true;
 }
 void Page::incre_cntr(){
 	this->ref_counter++;
 }
 void Page::decre_cntr(){
-	if(check_cntr()) this->ref_counter--;
-	else cout<<"counter goes 0"<<endl;
+	this->ref_counter--;
 }
 char* Page::getData(){
 	return this->data;
+}
+char* Page::read_from_disk(int file_descriptor, long offset, int size){
+	char* tmp = buffer_addr->get_addr();
+	lseek(file_descriptor, (int)(offset * size), SEEK_SET);
+	read(file_descriptor, tmp, size);
+	close(file_descriptor);
+	return tmp;
+}
+void Page::write_back_to_disk(int file_descriptor, long offset, int size){
+	char* tmp = buffer_addr->get_addr();
+	lseek(file_descriptor, (int)(offset * size), SEEK_SET);
+	write(file_descriptor,tmp,size);
+	close(file_descriptor);
+	this->setDirty(false);
 }
