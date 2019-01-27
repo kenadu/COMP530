@@ -49,14 +49,17 @@ int main () {
 		cout << "allocating pinned page\n";
 		MyDB_PageHandle pinnedPage = myMgr.getPinnedPage (table1, 0);
 		char *bytes = (char *) pinnedPage->getBytes ();
+		cout << static_cast<void *> (bytes) << endl;
 		writeNums (bytes, 64, 0);
 		pinnedPage->wroteBytes ();
+
+		cout << "3333" << endl;
 
 		
 		// create a bunch of pinned pages and remember them
 		vector <MyDB_PageHandle> myHandles;
 		for (int i = 1; i < 10; i++) {
-			cout << "allocating pinned page\n";
+			cout << "allocating pinned page " << i << endl;
 			MyDB_PageHandle temp = myMgr.getPinnedPage (table1, i);
 			char *bytes = (char *) temp->getBytes ();
 			writeNums (bytes, 64, i);
@@ -70,7 +73,7 @@ int main () {
 
 		// now remember 8 more pages
 		for (int i = 0; i < 8; i++) {
-			cout << "allocating pinned page\n";
+			cout << "allocating pinned page " << i << endl;
 			MyDB_PageHandle temp = myMgr.getPinnedPage (table1, i);
 			char *bytes = (char *) temp->getBytes ();
 
@@ -92,7 +95,7 @@ int main () {
 		
 		// now do 90 more pages, for which we forget the handle immediately
 		for (int i = 10; i < 100; i++) {
-			cout << "allocating unpinned page\n";
+			cout << "allocating unpinned page " << i << endl;
 			MyDB_PageHandle temp = myMgr.getPage (table1, i);
 			char *bytes = (char *) temp->getBytes ();
 			writeNums (bytes, 64, i);
@@ -103,17 +106,21 @@ int main () {
 		vector <MyDB_PageHandle> temp2;
 		myHandles = temp2;
 
+		cout << "end" << endl;
+		myMgr.print_pin_state();
 		// now get a pair of pages and write them
 		for (int i = 0; i < 100; i++) {
-			cout << "allocating pinned page\n";
+			cout << "allocating pinned page anony" << i << endl;
 			MyDB_PageHandle oneHandle = myMgr.getPinnedPage ();
 			char *bytes = (char *) oneHandle->getBytes ();
 			writeNums (bytes, 64, i);
 			oneHandle->wroteBytes ();
+			cout << "first handle " << oneHandle->get_my_page()->getBuffer_addr() << endl;
 			cout << "allocating pinned page\n";
 			MyDB_PageHandle twoHandle = myMgr.getPinnedPage ();
 			writeNums (bytes, 64, i);
 			twoHandle->wroteBytes ();
+			cout << "bytes : " << static_cast<void *>(bytes) << endl;
 		}
 
 		// make a second table

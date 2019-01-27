@@ -4,14 +4,16 @@
 #include <memory>
 #include <iostream>
 #include <unistd.h>
+#include <MyDB_Table.h>
 #include "buffer_node.h"
 using namespace std;
-class Page;
 /*
 	types of pages-> bool anonymous
 	pinning pages bool pin = true -> can't evict 
 	after calling wrotebyte, bool isDirty = true
 */
+class Node;
+class MyDB_Table;
 class Page{
 private:
 	char* data;
@@ -21,6 +23,10 @@ private:
 	bool is_Anonymous;
 	bool is_Pinned;
 	bool is_Dirty;
+	int temp_slot_id;
+	long offset;
+	MyDB_TablePtr tp;
+
 public: 
 	Page();
 	Page(Node*, bool, bool, bool);
@@ -38,6 +44,13 @@ public:
 	bool getDirty();
 	void setDirty(bool);
 	char* getData();
+	void setData(char*);
+	void set_tp(MyDB_TablePtr);
+	void set_offset(long);
+	MyDB_TablePtr get_tp();
+	long get_offset();
+	void set_temp_id(int);
+	int get_temp_id();
 
 };
 

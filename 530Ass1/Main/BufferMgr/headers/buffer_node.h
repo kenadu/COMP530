@@ -7,7 +7,7 @@
 #include "MyDB_Page.h"
 using namespace std;
 class Node;
-
+class Page;
 class Node{
 private:
     Page* buffered_page;

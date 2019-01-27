@@ -38,6 +38,9 @@ public:
 	// FEEL FREE TO ADD ADDITIONAL PUBLIC METHODS
 	void set_my_page(Page*);
 	Page* get_my_page();
+	MyDB_PageHandleBase(Page * page, MyDB_BufferManager * buf_mgr);
+	MyDB_PageHandleBase();
+
 
 private:
 	Page* my_page;

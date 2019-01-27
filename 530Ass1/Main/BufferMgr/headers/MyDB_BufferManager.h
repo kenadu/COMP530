@@ -10,15 +10,17 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <queue>
 
 
 using namespace std;
-
+class MyDB_PageHandleBase;
+typedef shared_ptr <MyDB_PageHandleBase> MyDB_PageHandle;
 class MyDB_BufferManager {
 
 public:
 	map<pair<MyDB_TablePtr, long>, Page*> table_page;
-	set<Page*> anony_pages;
+	//map<int , Page*>  anony_pages;
 
 	// THESE METHODS MUST APPEAR AND THE PROTOTYPES CANNOT CHANGE!
 
@@ -62,7 +64,11 @@ public:
 	Node* next_empty_node();
 	bool get_node_bit();
 	void evictPage_and_add(Page*);
-
+	int open_file(string filename);
+	int get_next_slot_id();
+	//void remove_anony(Page*);
+	void print_pin_state();
+	void read_and_write(Page*);
 
 private:
 	size_t pageSize;
@@ -70,6 +76,9 @@ private:
 	string tempFile;
 	vector<Node*>clock;
 	int clock_ptr;
+	int tempFileDesc;
+	queue<int> available_slot_id;
+	int next_slot_id;
 	// YOUR STUFF HERE
 
 };
