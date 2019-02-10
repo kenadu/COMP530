@@ -159,10 +159,16 @@
 		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h">
 			<Option target="Ass2"/>
 		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/headers/MyDB_PageRecordIterator.h">
+			<Option target="Ass2"/>
+		</Unit>
 		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/headers/MyDB_RecordIterator.h">
 			<Option target="Ass2"/>
 		</Unit>
 		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h">
+			<Option target="Ass2"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/headers/MyDB_TableRecordIterator.h">
 			<Option target="Ass2"/>
 		</Unit>
 		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc">

@@ -59,5 +59,5 @@ set(SOURCE_FILES
 
         Main/RecordTest/source/RecordQUnit.cc
 
-       )
+        Main/DatabaseTable/headers/MyDB_TableRecordIterator.h Main/DatabaseTable/headers/MyDB_PageRecordIterator.h)
 add_executable(Ass2 ${SOURCE_FILES})
