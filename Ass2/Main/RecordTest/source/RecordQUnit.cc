@@ -39,11 +39,13 @@ void initialize() {
 	// use the schema to create a table
 	MyDB_TablePtr myTable = make_shared <MyDB_Table>("supplier", "supplier.bin", mySchema);
 	MyDB_BufferManagerPtr myMgr = make_shared <MyDB_BufferManager>(1024, 16, "tempFile");
-	//cout<<"before creating table reader writer"<<endl;
+	cout<<"\nbefore creating table reader writer"<<endl;
 	MyDB_TableReaderWriter supplierTable(myTable, myMgr);
+	cout<<"after creating table reader writer"<<endl;
 
 	// load it from a text file
 	supplierTable.loadFromTextFile("supplier.tbl");
+	cout<<"after loaded text file"<<endl;
 
 	// put the supplier table into the catalog
 	myTable->putInCatalog(myCatalog);

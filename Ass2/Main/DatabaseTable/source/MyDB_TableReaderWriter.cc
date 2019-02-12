@@ -4,6 +4,7 @@
 
 #include <fstream>
 #include "MyDB_PageReaderWriter.h"
+#include "MyDB_TableRecordIterator.h"
 #include "MyDB_TableReaderWriter.h"
 
 using namespace std;
@@ -32,7 +33,8 @@ MyDB_PageReaderWriter &MyDB_TableReaderWriter :: operator [] (size_t i) {
 
 MyDB_RecordPtr MyDB_TableReaderWriter :: getEmptyRecord () {
     //get an empty record to have this table's schema
-	return *make_shared<MyDB_RecordPtr>(this->my_table->getSchema());
+    //MyDB_RecordPtr empty= make_shared<MyDB_RecordPtr>(this->my_table->getSchema());
+	return make_shared<MyDB_Record>(this->my_table->getSchema());
 }
 
 MyDB_PageReaderWriter &MyDB_TableReaderWriter :: last () {
@@ -45,7 +47,9 @@ void MyDB_TableReaderWriter :: append (MyDB_RecordPtr myRecPtr) {
 
 	MyDB_PageReaderWriterPtr tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
 	//try to append it if this page still has empty spot
+
 	bool try_to_do_in_PageRdwt = tmp->append(myRecPtr);
+
 	if(!try_to_do_in_PageRdwt){
 	    //add one more page in the table
 		this->my_table->setLastPage(this->my_table->lastPage()+1);
@@ -70,22 +74,36 @@ void MyDB_TableReaderWriter :: loadFromTextFile (string fromMe) {
 	ifstream infile;
 	infile.open (fromMe);
 	MyDB_RecordPtr rcd = getEmptyRecord();
+
 	while(!infile.eof()) // To get you all the lines.
 	{
 		getline(infile,STRING); // Saves the line in STRING.
 		rcd->fromString(STRING); // Parse this line
+
 		append(rcd); //append this record by pagereadwriter
+
+
 	}
 	infile.close();
 
 }
 
-MyDB_RecordIteratorPtr MyDB_TableReaderWriter :: getIterator (MyDB_RecordPtr) {
-	return this->table_rec_iter;
+MyDB_RecordIteratorPtr MyDB_TableReaderWriter :: getIterator (MyDB_RecordPtr myRecPtr) {
+
+	return make_shared<MyDB_TableRecordIterator>(*this, myRecPtr);
 }
 
 void MyDB_TableReaderWriter :: writeIntoTextFile (string toMe) {
+	ofstream outFile;
+	outFile.open (toMe);
 
+	MyDB_RecordPtr empty_rec = getEmptyRecord ();
+
+	MyDB_RecordIteratorPtr table_rec_iter= getIterator (empty_rec);
+	while (table_rec_iter->hasNext()) {
+		table_rec_iter->getNext ();
+	}
+	outFile.close ();
 
 }
 

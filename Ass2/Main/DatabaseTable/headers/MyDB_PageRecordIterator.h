@@ -16,7 +16,7 @@ typedef shared_ptr <MyDB_PageRecordIterator> MyDB_PageRecordIteratorPtr;
 
 class MyDB_PageRecordIterator: public MyDB_RecordIterator {
 private:
-    MyDB_PageReaderWriterPtr point_to_page;
+    MyDB_PageReaderWriter& point_to_page;
     MyDB_RecordPtr point_to_rec;
     void* binaryData;
     size_t cursor;
@@ -30,8 +30,7 @@ public:
     bool hasNext () ;
 
     // destructor and contructor
-    MyDB_PageRecordIterator () ;
-    MyDB_PageRecordIterator (MyDB_PageReaderWriterPtr, MyDB_RecordPtr);
+    MyDB_PageRecordIterator (MyDB_PageReaderWriter&, MyDB_RecordPtr);
     ~MyDB_PageRecordIterator () ;
 
 };

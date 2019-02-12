@@ -7,15 +7,17 @@
 
 #include "MyDB_RecordIterator.h"
 #include "MyDB_PageReaderWriter.h"
+
 using namespace std;
 
 class MyDB_TableRecordIterator;
 typedef shared_ptr <MyDB_TableRecordIterator> MyDB_TableRecordIteratorPtr;
+//: public shared_ptr<::MyDB_RecordIterator>;
 
 
 class MyDB_TableRecordIterator: public MyDB_RecordIterator {
 private:
-    MyDB_TableReaderWriterPtr point_to_table;
+    MyDB_TableReaderWriter &point_to_table;
     MyDB_RecordIteratorPtr point_to_page_iter;
     MyDB_RecordPtr point_to_rec;
     size_t cursor;
@@ -29,8 +31,7 @@ public:
     bool hasNext () ;
 
     // destructor and contructor
-    MyDB_TableRecordIterator () ;
-    MyDB_TableRecordIterator (MyDB_TableReaderWriterPtr, MyDB_RecordPtr);
+    MyDB_TableRecordIterator (MyDB_TableReaderWriter &, MyDB_RecordPtr);
     ~MyDB_TableRecordIterator () ;
 
 };

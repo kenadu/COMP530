@@ -60,11 +60,31 @@ CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Mai
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/Catalog/headers/MyDB_Schema.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/Catalog/headers/MyDB_Table.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_PageReaderWriter.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_PageRecordIterator.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_RecordIterator.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_TableReaderWriter.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/Record/headers/MyDB_AttVal.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/Record/headers/MyDB_Record.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o: ../Main/DatabaseTable/source/MyDB_PageReaderWriter.cc
+
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/BufferMgr/headers/CheckLRU.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/BufferMgr/headers/MyDB_BufferManager.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/BufferMgr/headers/MyDB_Page.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/BufferMgr/headers/MyDB_PageHandle.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/BufferMgr/headers/PageCompare.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/BufferMgr/headers/TableCompare.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_AttType.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_Catalog.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_PageType.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_Schema.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_Table.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_PageReaderWriter.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_PageRecordIterator.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_RecordIterator.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_TableReaderWriter.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/Record/headers/MyDB_AttVal.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/Record/headers/MyDB_Record.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/DatabaseTable/source/MyDB_PageRecordIterator.cc
 
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/BufferMgr/headers/CheckLRU.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/BufferMgr/headers/MyDB_BufferManager.h
@@ -80,9 +100,29 @@ CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Ma
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_PageReaderWriter.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_RecordIterator.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_TableReaderWriter.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/DatabaseTable/headers/MyDB_TableRecordIterator.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/Record/headers/MyDB_AttVal.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/Record/headers/MyDB_Record.h
 CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o: ../Main/DatabaseTable/source/MyDB_TableReaderWriter.cc
+
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/BufferMgr/headers/CheckLRU.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/BufferMgr/headers/MyDB_BufferManager.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/BufferMgr/headers/MyDB_Page.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/BufferMgr/headers/MyDB_PageHandle.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/BufferMgr/headers/PageCompare.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/BufferMgr/headers/TableCompare.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_AttType.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_Catalog.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_PageType.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_Schema.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/Catalog/headers/MyDB_Table.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_PageReaderWriter.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_RecordIterator.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_TableReaderWriter.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/DatabaseTable/headers/MyDB_TableRecordIterator.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/Record/headers/MyDB_AttVal.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/Record/headers/MyDB_Record.h
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/DatabaseTable/source/MyDB_TableRecordIterator.cc
 
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o: ../Main/Record/headers/MyDB_AttVal.h
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o: ../Main/Record/source/MyDB_AttVal.cc
