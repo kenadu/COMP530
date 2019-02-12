@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Ass2.dir/Main/Catalog/source/MyDB_Schema.cc.o"
   "CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o"
   "CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o"
+  "CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o"
+  "CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o"
   "CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o"
   "CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o"
   "CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o"

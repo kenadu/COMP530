@@ -41,10 +41,14 @@ set(SOURCE_FILES
 
         Main/DatabaseTable/headers/MyDB_PageReaderWriter.h
         Main/DatabaseTable/headers/MyDB_RecordIterator.h
+        Main/DatabaseTable/headers/MyDB_PageRecordIterator.h
+        Main/DatabaseTable/headers/MyDB_TableRecordIterator.h
         Main/DatabaseTable/headers/MyDB_TableReaderWriter.h
 
         Main/DatabaseTable/source/MyDB_PageReaderWriter.cc
         Main/DatabaseTable/source/MyDB_TableReaderWriter.cc
+        Main/DatabaseTable/source/MyDB_TableRecordIterator.cc
+        Main/DatabaseTable/source/MyDB_PageRecordIterator.cc
 
 
 

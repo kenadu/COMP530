@@ -26,6 +26,7 @@ public:
 
 	// gets an empty record from this table
 	MyDB_RecordPtr getEmptyRecord ();
+	MyDB_TablePtr getMy_table();
 
 	// append a record to the table
 	void append (MyDB_RecordPtr appendMe);
@@ -50,6 +51,7 @@ public:
 private:
 	MyDB_TablePtr my_table;
 	MyDB_BufferManagerPtr my_buffer;
+	MyDB_RecordIteratorPtr table_rec_iter;
 	// ANYTHING YOU NEED HERE
 };
 

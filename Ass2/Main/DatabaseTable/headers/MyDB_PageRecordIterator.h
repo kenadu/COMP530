@@ -5,19 +5,21 @@
 #define PAGE_REC_ITER_H
 
 #include "MyDB_RecordIterator.h"
+#include "MyDB_PageReaderWriter.h"
 using namespace std;
 
-// This pure virtual class is used to iterate through the records in a page or file
-// Instances of this class will be created via calls to MyDB_PageReaderWriter.getIterator ()
-// or MyDB_FileReaderWriter.getIterator ().
-//
+
 class MyDB_PageRecordIterator;
 typedef shared_ptr <MyDB_PageRecordIterator> MyDB_PageRecordIteratorPtr;
 
-// DO NOT MODIFY!
+
 
 class MyDB_PageRecordIterator: public MyDB_RecordIterator {
-
+private:
+    MyDB_PageReaderWriterPtr point_to_page;
+    MyDB_RecordPtr point_to_rec;
+    void* binaryData;
+    size_t cursor;
 public:
 
     // put the contents of the next record in the file/page into the iterator record
@@ -29,6 +31,7 @@ public:
 
     // destructor and contructor
     MyDB_PageRecordIterator () ;
+    MyDB_PageRecordIterator (MyDB_PageReaderWriterPtr, MyDB_RecordPtr);
     ~MyDB_PageRecordIterator () ;
 
 };

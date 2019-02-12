@@ -285,6 +285,33 @@ Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.s:
 	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.s
 .PHONY : Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.s
 
+Main/DatabaseTable/source/MyDB_PageRecordIterator.o: Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o
+
+.PHONY : Main/DatabaseTable/source/MyDB_PageRecordIterator.o
+
+# target to build an object file
+Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o:
+	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o
+.PHONY : Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o
+
+Main/DatabaseTable/source/MyDB_PageRecordIterator.i: Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.i
+
+.PHONY : Main/DatabaseTable/source/MyDB_PageRecordIterator.i
+
+# target to preprocess a source file
+Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.i:
+	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.i
+.PHONY : Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.i
+
+Main/DatabaseTable/source/MyDB_PageRecordIterator.s: Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.s
+
+.PHONY : Main/DatabaseTable/source/MyDB_PageRecordIterator.s
+
+# target to generate assembly for a file
+Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.s:
+	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.s
+.PHONY : Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.s
+
 Main/DatabaseTable/source/MyDB_TableReaderWriter.o: Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o
 
 .PHONY : Main/DatabaseTable/source/MyDB_TableReaderWriter.o
@@ -311,6 +338,33 @@ Main/DatabaseTable/source/MyDB_TableReaderWriter.s: Main/DatabaseTable/source/My
 Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.s:
 	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.s
 .PHONY : Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.s
+
+Main/DatabaseTable/source/MyDB_TableRecordIterator.o: Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o
+
+.PHONY : Main/DatabaseTable/source/MyDB_TableRecordIterator.o
+
+# target to build an object file
+Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o:
+	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o
+.PHONY : Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o
+
+Main/DatabaseTable/source/MyDB_TableRecordIterator.i: Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.i
+
+.PHONY : Main/DatabaseTable/source/MyDB_TableRecordIterator.i
+
+# target to preprocess a source file
+Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.i:
+	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.i
+.PHONY : Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.i
+
+Main/DatabaseTable/source/MyDB_TableRecordIterator.s: Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.s
+
+.PHONY : Main/DatabaseTable/source/MyDB_TableRecordIterator.s
+
+# target to generate assembly for a file
+Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.s:
+	$(MAKE) -f CMakeFiles/Ass2.dir/build.make CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.s
+.PHONY : Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.s
 
 Main/Record/source/MyDB_AttVal.o: Main/Record/source/MyDB_AttVal.cc.o
 
@@ -420,9 +474,15 @@ help:
 	@echo "... Main/DatabaseTable/source/MyDB_PageReaderWriter.o"
 	@echo "... Main/DatabaseTable/source/MyDB_PageReaderWriter.i"
 	@echo "... Main/DatabaseTable/source/MyDB_PageReaderWriter.s"
+	@echo "... Main/DatabaseTable/source/MyDB_PageRecordIterator.o"
+	@echo "... Main/DatabaseTable/source/MyDB_PageRecordIterator.i"
+	@echo "... Main/DatabaseTable/source/MyDB_PageRecordIterator.s"
 	@echo "... Main/DatabaseTable/source/MyDB_TableReaderWriter.o"
 	@echo "... Main/DatabaseTable/source/MyDB_TableReaderWriter.i"
 	@echo "... Main/DatabaseTable/source/MyDB_TableReaderWriter.s"
+	@echo "... Main/DatabaseTable/source/MyDB_TableRecordIterator.o"
+	@echo "... Main/DatabaseTable/source/MyDB_TableRecordIterator.i"
+	@echo "... Main/DatabaseTable/source/MyDB_TableRecordIterator.s"
 	@echo "... Main/Record/source/MyDB_AttVal.o"
 	@echo "... Main/Record/source/MyDB_AttVal.i"
 	@echo "... Main/Record/source/MyDB_AttVal.s"

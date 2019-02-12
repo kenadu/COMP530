@@ -21,40 +21,51 @@ MyDB_TableReaderWriter :: MyDB_TableReaderWriter (MyDB_TablePtr forMe, MyDB_Buff
 
 MyDB_PageReaderWriter &MyDB_TableReaderWriter :: operator [] (size_t i) {
 	MyDB_PageReaderWriterPtr temp;
+	//while index is out of the range, increment the page size
 	while(i>my_table->lastPage()){
 		my_table->setLastPage(my_table->lastPage()+1);
 	}
+	//let the pagereaderwriter point to this last page, accessing the page
 	temp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, i);
 	return *temp;
 }
 
 MyDB_RecordPtr MyDB_TableReaderWriter :: getEmptyRecord () {
-
+    //get an empty record to have this table's schema
 	return *make_shared<MyDB_RecordPtr>(this->my_table->getSchema());
 }
 
 MyDB_PageReaderWriter &MyDB_TableReaderWriter :: last () {
+    //get the last page, or we can do the alternate accessing index one above
 	return (*this)[this->my_table->lastPage()];
 }
 
 
 void MyDB_TableReaderWriter :: append (MyDB_RecordPtr myRecPtr) {
+
 	MyDB_PageReaderWriterPtr tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
+	//try to append it if this page still has empty spot
 	bool try_to_do_in_PageRdwt = tmp->append(myRecPtr);
 	if(!try_to_do_in_PageRdwt){
+	    //add one more page in the table
 		this->my_table->setLastPage(this->my_table->lastPage()+1);
+		//make this new added page as the new page reader writer,
+		//clear its record because we are building a new empty page and append this record
 		tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
 		tmp->clear();
 		tmp->append(myRecPtr);
 	}
 }
+MyDB_TablePtr MyDB_TableReaderWriter::getMy_table() {
+    return this->my_table;
+}
 
 void MyDB_TableReaderWriter :: loadFromTextFile (string fromMe) {
-	//reinitialize my table and the MyDB_PageReaderWriter.
+	//reinitialize my table and the MyDB_PageReaderWriter. and make a new pagereaderwriter
 	this->my_table->setLastPage(0);
 	MyDB_PageReaderWriterPtr tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
 	tmp->clear();
-
+    //reading from string line by line, parse each string as a record
 	string STRING;
 	ifstream infile;
 	infile.open (fromMe);
@@ -70,10 +81,12 @@ void MyDB_TableReaderWriter :: loadFromTextFile (string fromMe) {
 }
 
 MyDB_RecordIteratorPtr MyDB_TableReaderWriter :: getIterator (MyDB_RecordPtr) {
-	return nullptr;
+	return this->table_rec_iter;
 }
 
-void MyDB_TableReaderWriter :: writeIntoTextFile (string) {
+void MyDB_TableReaderWriter :: writeIntoTextFile (string toMe) {
+
+
 }
 
 #endif

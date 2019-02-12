@@ -174,7 +174,13 @@
 		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc">
 			<Option target="Ass2"/>
 		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc">
+			<Option target="Ass2"/>
+		</Unit>
 		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc">
+			<Option target="Ass2"/>
+		</Unit>
+		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc">
 			<Option target="Ass2"/>
 		</Unit>
 		<Unit filename="/Users/kenadu/CLionProjects/Ass2/Main/Qunit/headers/QUnit.h">

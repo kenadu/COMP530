@@ -148,9 +148,35 @@ CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc -o CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.s
 
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: CMakeFiles/Ass2.dir/flags.make
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o: ../Main/DatabaseTable/source/MyDB_TableRecordIterator.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o -c /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc
+
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc > CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.i
+
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc -o CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.s
+
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: CMakeFiles/Ass2.dir/flags.make
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o: ../Main/DatabaseTable/source/MyDB_PageRecordIterator.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o -c /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc
+
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc > CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.i
+
+CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc -o CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.s
+
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o: CMakeFiles/Ass2.dir/flags.make
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o: ../Main/Record/source/MyDB_AttVal.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o -c /Users/kenadu/CLionProjects/Ass2/Main/Record/source/MyDB_AttVal.cc
 
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.i: cmake_force
@@ -163,7 +189,7 @@ CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.s: cmake_force
 
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o: CMakeFiles/Ass2.dir/flags.make
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o: ../Main/Record/source/MyDB_Record.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o -c /Users/kenadu/CLionProjects/Ass2/Main/Record/source/MyDB_Record.cc
 
 CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.i: cmake_force
@@ -176,7 +202,7 @@ CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.s: cmake_force
 
 CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o: CMakeFiles/Ass2.dir/flags.make
 CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o: ../Main/RecordTest/source/RecordQUnit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o -c /Users/kenadu/CLionProjects/Ass2/Main/RecordTest/source/RecordQUnit.cc
 
 CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.i: cmake_force
@@ -196,6 +222,8 @@ Ass2_OBJECTS = \
 "CMakeFiles/Ass2.dir/Main/Catalog/source/MyDB_Schema.cc.o" \
 "CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o" \
 "CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o" \
+"CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o" \
+"CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o" \
 "CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o" \
 "CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o" \
 "CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o"
@@ -210,12 +238,14 @@ Ass2: CMakeFiles/Ass2.dir/Main/Catalog/source/MyDB_Catalog.cc.o
 Ass2: CMakeFiles/Ass2.dir/Main/Catalog/source/MyDB_Schema.cc.o
 Ass2: CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o
 Ass2: CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o
+Ass2: CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o
+Ass2: CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o
 Ass2: CMakeFiles/Ass2.dir/Main/Record/source/MyDB_AttVal.cc.o
 Ass2: CMakeFiles/Ass2.dir/Main/Record/source/MyDB_Record.cc.o
 Ass2: CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o
 Ass2: CMakeFiles/Ass2.dir/build.make
 Ass2: CMakeFiles/Ass2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Ass2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kenadu/CLionProjects/Ass2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Ass2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ass2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
