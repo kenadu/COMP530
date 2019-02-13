@@ -3,6 +3,7 @@
 #define TABLE_RW_H
 
 #include <memory>
+#include <vector>
 #include "MyDB_BufferManager.h"
 #include "MyDB_Record.h"
 #include "MyDB_RecordIterator.h"
@@ -14,7 +15,8 @@ class MyDB_PageReaderWriter;
 class MyDB_TableReaderWriter;
 typedef shared_ptr <MyDB_TableReaderWriter> MyDB_TableReaderWriterPtr;
 
-class MyDB_TableReaderWriter {
+class MyDB_TableReaderWriter//: public enable_shared_from_this<MyDB_TableReaderWriter>
+{
 
 public:
 
@@ -46,12 +48,14 @@ public:
 	MyDB_PageReaderWriter &operator [] (size_t i);
 
         // access the last page in the file
-        MyDB_PageReaderWriter &last ();
+
+	MyDB_PageReaderWriter &last ();
 
 private:
 	MyDB_TablePtr my_table;
 	MyDB_BufferManagerPtr my_buffer;
-	MyDB_RecordIteratorPtr table_rec_iter;
+	vector <shared_ptr<MyDB_PageReaderWriter>> my_page_RW_Ptrs;
+	//MyDB_RecordIteratorPtr table_rec_iter;
 	// ANYTHING YOU NEED HERE
 };
 

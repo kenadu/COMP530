@@ -13,7 +13,8 @@ struct PageInfo {
 	int lastByte;
 	char data[0];
 };
-class MyDB_PageReaderWriter {
+class MyDB_PageReaderWriter{
+		// : public enable_shared_from_this<MyDB_PageReaderWriter>{
 
 public:
 
@@ -45,7 +46,7 @@ private:
 	MyDB_BufferManagerPtr my_buffer;
 	MyDB_PageHandle my_page_hb;
 	MyDB_PageType pageType;
-	MyDB_RecordIteratorPtr page_rec_iter;
+	//MyDB_RecordIteratorPtr page_rec_iter;
 	size_t pageSize;
 
 };

@@ -19,15 +19,16 @@ private:
     MyDB_PageReaderWriter& point_to_page;
     MyDB_RecordPtr point_to_rec;
     void* binaryData;
+    bool has_next;
     size_t cursor;
 public:
 
     // put the contents of the next record in the file/page into the iterator record
     // this should be called BEFORE the iterator record is first examined
-    void getNext () ;
+    void getNext () override;
 
     // return true iff there is another record in the file/page
-    bool hasNext () ;
+    bool hasNext () override;
 
     // destructor and contructor
     MyDB_PageRecordIterator (MyDB_PageReaderWriter&, MyDB_RecordPtr);

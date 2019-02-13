@@ -116,18 +116,14 @@ MyDB_RecordIterator.h
 MyDB_TableReaderWriter.h
 ../Main/DatabaseTable/headers/MyDB_TableReaderWriter.h
 
-../Main/DatabaseTable/headers/MyDB_PageRecordIterator.h
-MyDB_RecordIterator.h
-../Main/DatabaseTable/headers/MyDB_RecordIterator.h
-MyDB_PageReaderWriter.h
-../Main/DatabaseTable/headers/MyDB_PageReaderWriter.h
-
 ../Main/DatabaseTable/headers/MyDB_RecordIterator.h
 memory
 -
 
 ../Main/DatabaseTable/headers/MyDB_TableReaderWriter.h
 memory
+-
+vector
 -
 MyDB_BufferManager.h
 ../Main/DatabaseTable/headers/MyDB_BufferManager.h
@@ -137,6 +133,12 @@ MyDB_RecordIterator.h
 ../Main/DatabaseTable/headers/MyDB_RecordIterator.h
 MyDB_Table.h
 ../Main/DatabaseTable/headers/MyDB_Table.h
+
+../Main/DatabaseTable/headers/MyDB_TableRecordIterator.h
+MyDB_RecordIterator.h
+../Main/DatabaseTable/headers/MyDB_RecordIterator.h
+MyDB_PageReaderWriter.h
+../Main/DatabaseTable/headers/MyDB_PageReaderWriter.h
 
 ../Main/Record/headers/MyDB_AttVal.h
 memory
@@ -158,9 +160,13 @@ string
 vector
 -
 
-/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc
+/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc
+fstream
+-
 MyDB_PageReaderWriter.h
 /Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageReaderWriter.h
-MyDB_PageRecordIterator.h
-/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_PageRecordIterator.h
+MyDB_TableRecordIterator.h
+/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableRecordIterator.h
+MyDB_TableReaderWriter.h
+/Users/kenadu/CLionProjects/Ass2/Main/DatabaseTable/source/MyDB_TableReaderWriter.h
 

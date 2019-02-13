@@ -17,21 +17,25 @@ typedef shared_ptr <MyDB_TableRecordIterator> MyDB_TableRecordIteratorPtr;
 
 class MyDB_TableRecordIterator: public MyDB_RecordIterator {
 private:
-    MyDB_TableReaderWriter &point_to_table;
+    MyDB_TableReaderWriter& point_to_table;
     MyDB_RecordIteratorPtr point_to_page_iter;
     MyDB_RecordPtr point_to_rec;
     size_t cursor;
+    size_t tmp_cursor;
+    MyDB_RecordIteratorPtr tmp_page_iter;
+    bool has_next;
+
 public:
 
     // put the contents of the next record in the file/page into the iterator record
     // this should be called BEFORE the iterator record is first examined
-    void getNext () ;
+    void getNext () override;
 
     // return true iff there is another record in the file/page
-    bool hasNext () ;
+    bool hasNext () override;
 
     // destructor and contructor
-    MyDB_TableRecordIterator (MyDB_TableReaderWriter &, MyDB_RecordPtr);
+    MyDB_TableRecordIterator (MyDB_TableReaderWriter&, MyDB_RecordPtr);
     ~MyDB_TableRecordIterator () ;
 
 };

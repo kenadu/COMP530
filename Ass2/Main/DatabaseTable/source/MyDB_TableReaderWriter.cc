@@ -12,40 +12,58 @@ using namespace std;
 MyDB_TableReaderWriter :: MyDB_TableReaderWriter (MyDB_TablePtr forMe, MyDB_BufferManagerPtr myBuffer) {
 	this->my_table = forMe;
 	this->my_buffer = myBuffer;
-	//if the table has no last page
-	if(this->my_table->lastPage()==-1){
-		this->my_table->setLastPage(this->my_table->lastPage()+1);
-		MyDB_PageReaderWriterPtr tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
+	//cout<<"\ntablereaderwriter constructor"<<endl;
+	//cout<<"\n!!!my table size "<<my_table->lastPage()<<" my page rw pt size "<<my_page_RW_Ptrs.size()<<endl;
+	//pushback k number of pagereaderwriter depends on how many pages table has
+	if(this->my_table->lastPage() == -1){
+		this->my_table->setLastPage(0);
+		shared_ptr<MyDB_PageReaderWriter> tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, 0);
 		tmp->clear();
+		my_page_RW_Ptrs.push_back(tmp);
 	}
+	else {
+
+		for (size_t i = 0; i <= this->my_table->lastPage(); i++) {
+			shared_ptr<MyDB_PageReaderWriter> tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table,
+																					   i);
+			//tmp->clear();
+			my_page_RW_Ptrs.push_back(tmp);
+			//clear in constructor????
+		}
+	}
+	//cout<<"\n???my table size "<<my_table->lastPage()<<" my page rw pt size "<<my_page_RW_Ptrs.size()<<endl;
+
 }
 
 MyDB_PageReaderWriter &MyDB_TableReaderWriter :: operator [] (size_t i) {
-	MyDB_PageReaderWriterPtr temp;
+	shared_ptr <MyDB_PageReaderWriter> temp;
 	//while index is out of the range, increment the page size
 	while(i>my_table->lastPage()){
 		my_table->setLastPage(my_table->lastPage()+1);
+		temp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
+		temp->clear();
+		my_page_RW_Ptrs.push_back(temp);
 	}
 	//let the pagereaderwriter point to this last page, accessing the page
-	temp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, i);
-	return *temp;
+	return *my_page_RW_Ptrs[i];
 }
 
 MyDB_RecordPtr MyDB_TableReaderWriter :: getEmptyRecord () {
     //get an empty record to have this table's schema
     //MyDB_RecordPtr empty= make_shared<MyDB_RecordPtr>(this->my_table->getSchema());
+   //cout<<"get an empty record"<<endl;
 	return make_shared<MyDB_Record>(this->my_table->getSchema());
 }
 
 MyDB_PageReaderWriter &MyDB_TableReaderWriter :: last () {
     //get the last page, or we can do the alternate accessing index one above
-	return (*this)[this->my_table->lastPage()];
+	return *my_page_RW_Ptrs.back();
 }
 
 
 void MyDB_TableReaderWriter :: append (MyDB_RecordPtr myRecPtr) {
 
-	MyDB_PageReaderWriterPtr tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
+	shared_ptr <MyDB_PageReaderWriter> tmp = my_page_RW_Ptrs.back();
 	//try to append it if this page still has empty spot
 
 	bool try_to_do_in_PageRdwt = tmp->append(myRecPtr);
@@ -58,6 +76,7 @@ void MyDB_TableReaderWriter :: append (MyDB_RecordPtr myRecPtr) {
 		tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
 		tmp->clear();
 		tmp->append(myRecPtr);
+		my_page_RW_Ptrs.push_back(tmp);
 	}
 }
 MyDB_TablePtr MyDB_TableReaderWriter::getMy_table() {
@@ -67,8 +86,11 @@ MyDB_TablePtr MyDB_TableReaderWriter::getMy_table() {
 void MyDB_TableReaderWriter :: loadFromTextFile (string fromMe) {
 	//reinitialize my table and the MyDB_PageReaderWriter. and make a new pagereaderwriter
 	this->my_table->setLastPage(0);
-	MyDB_PageReaderWriterPtr tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, this->my_table->lastPage());
-	tmp->clear();
+	for(auto p: my_page_RW_Ptrs){
+		p->clear();
+	}
+	//erase all except the first one at index 0.
+	my_page_RW_Ptrs.erase(my_page_RW_Ptrs.begin()+1,my_page_RW_Ptrs.end());
     //reading from string line by line, parse each string as a record
 	string STRING;
 	ifstream infile;
@@ -79,7 +101,6 @@ void MyDB_TableReaderWriter :: loadFromTextFile (string fromMe) {
 	{
 		getline(infile,STRING); // Saves the line in STRING.
 		rcd->fromString(STRING); // Parse this line
-
 		append(rcd); //append this record by pagereadwriter
 
 
@@ -90,6 +111,7 @@ void MyDB_TableReaderWriter :: loadFromTextFile (string fromMe) {
 
 MyDB_RecordIteratorPtr MyDB_TableReaderWriter :: getIterator (MyDB_RecordPtr myRecPtr) {
 
+	//MyDB_TableReaderWriterPtr linkthis = make_shared<MyDB_TableReaderWriter>(this);
 	return make_shared<MyDB_TableRecordIterator>(*this, myRecPtr);
 }
 
