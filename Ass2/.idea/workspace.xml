@@ -12,24 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4550dad-0962-4320-bf07-c41c91556625" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageRecordIterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageRecordIterator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecordIterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecordIterator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Ass2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Ass2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass2.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass2.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass2.dir/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass2.dir/Main/RecordTest/source/RecordQUnit.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/supplier.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/supplier.bin" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="465" column="9" lean-forward="true" selection-start-line="156" selection-start-column="12" selection-end-line="465" selection-end-column="9" />
+            <state relative-caret-position="365">
+              <caret line="150" column="49" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="49" />
               <folding>
                 <element signature="e#45#70#0" expanded="true" />
               </folding>
@@ -65,11 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecordIterator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="42" />
+              <folding>
+                <element signature="e#95#127#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state relative-caret-position="284">
+              <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
               <folding>
                 <element signature="e#40#58#0" expanded="true" />
               </folding>
@@ -80,17 +77,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="166">
               <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            <state relative-caret-position="233">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -103,6 +100,15 @@
               <folding>
                 <element signature="e#38#72#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/Catalog/headers/MyDB_Table.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="939">
+              <caret line="104" column="4" lean-forward="true" selection-start-line="104" selection-start-column="4" selection-end-line="105" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -133,8 +139,8 @@
       <find>start</find>
       <find>TEST 4...start initialization..</find>
       <find>TEST</find>
-      <find>binaryData</find>
       <find>cout</find>
+      <find>binaryData</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,8 +161,8 @@
         <option value="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecordIterator.h" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc" />
         <option value="$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc" />
-        <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc" />
+        <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc" />
       </list>
     </option>
   </component>
@@ -206,6 +212,26 @@
               <item name="Ass2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ass2" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="Catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ass2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ass2" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="Catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="headers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ass2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ass2" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="Catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ass2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ass2" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
               <item name="DatabaseTable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,12 +247,6 @@
               <item name="Main" type="462c0819:PsiDirectoryNode" />
               <item name="DatabaseTable" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ass2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ass2" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-              <item name="Qunit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ass2" type="b2602c69:ProjectViewProjectNode" />
@@ -305,12 +325,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549747791572</updated>
       <workItem from="1549747795354" duration="12679000" />
-      <workItem from="1549915879048" duration="66114000" />
+      <workItem from="1549915879048" duration="69439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78793000" />
+    <option name="totallyTimeSpent" value="82118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -399,13 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/Catalog/headers/MyDB_Table.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -605,16 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecordIterator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="e#95#127#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageRecordIterator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -642,20 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
@@ -666,10 +655,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main/Catalog/headers/MyDB_Table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="939">
+          <caret line="104" column="4" lean-forward="true" selection-start-line="104" selection-start-column="4" selection-end-line="105" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecordIterator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#95#127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="465" column="9" lean-forward="true" selection-start-line="156" selection-start-column="12" selection-end-line="465" selection-end-column="9" />
+        <state relative-caret-position="365">
+          <caret line="150" column="49" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="49" />
           <folding>
             <element signature="e#45#70#0" expanded="true" />
           </folding>
@@ -678,11 +684,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="284">
+          <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
           <folding>
             <element signature="e#40#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecordIterator.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecordIterator.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>

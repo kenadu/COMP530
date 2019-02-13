@@ -307,6 +307,7 @@ int main(int argc, char *argv[]) {
 						counter++;
 					}
 					if (myIter1->hasNext()) {
+
 						myIter1->getNext();
 						counter++;
 					}

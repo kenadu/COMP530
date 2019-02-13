@@ -31,6 +31,7 @@ bool MyDB_TableRecordIterator::hasNext() {
     while(!tmp_page_iter->hasNext()){
 
         this->tmp_cursor++;
+        //cout<<"tmp_cursor will be "<<this->tmp_cursor<<" and mytable last page is "<<this->point_to_table.getMy_table()->lastPage()<<endl;
         if(this->tmp_cursor > this->point_to_table.getMy_table()->lastPage()) return false;
         this->tmp_page_iter = this->point_to_table[this->tmp_cursor].getIterator(this->point_to_rec);
     }

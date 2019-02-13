@@ -12,9 +12,7 @@ using namespace std;
 MyDB_TableReaderWriter :: MyDB_TableReaderWriter (MyDB_TablePtr forMe, MyDB_BufferManagerPtr myBuffer) {
 	this->my_table = forMe;
 	this->my_buffer = myBuffer;
-	//cout<<"\ntablereaderwriter constructor"<<endl;
-	//cout<<"\n!!!my table size "<<my_table->lastPage()<<" my page rw pt size "<<my_page_RW_Ptrs.size()<<endl;
-	//pushback k number of pagereaderwriter depends on how many pages table has
+
 	if(this->my_table->lastPage() == -1){
 		this->my_table->setLastPage(0);
 		shared_ptr<MyDB_PageReaderWriter> tmp = make_shared<MyDB_PageReaderWriter>(this->my_buffer, this->my_table, 0);
@@ -28,7 +26,7 @@ MyDB_TableReaderWriter :: MyDB_TableReaderWriter (MyDB_TablePtr forMe, MyDB_Buff
 																					   i);
 			//tmp->clear();
 			my_page_RW_Ptrs.push_back(tmp);
-			//clear in constructor????
+
 		}
 	}
 	//cout<<"\n???my table size "<<my_table->lastPage()<<" my page rw pt size "<<my_page_RW_Ptrs.size()<<endl;
@@ -99,7 +97,7 @@ void MyDB_TableReaderWriter :: loadFromTextFile (string fromMe) {
 
 	while(!infile.eof()) // To get you all the lines.
 	{
-		getline(infile,STRING); // Saves the line in STRING.
+		if(!getline(infile,STRING)) break; // Saves the line in STRING.
 		rcd->fromString(STRING); // Parse this line
 		append(rcd); //append this record by pagereadwriter
 
